@@ -1,0 +1,19 @@
+@import '../theme.scss';
+
+.mainheader {
+  background-color: $color-secondary;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+  }
+  
+  &__logo {
+    width: 12rem;
+    height: 12rem;
+    display: block;
+  }
+}
+ 

@@ -1,0 +1,34 @@
+@import '../../theme.scss';
+
+.show-blog {
+  margin-top:  4.5rem;
+  h3 {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    display: inline-block;
+
+    @include respond(phone-medium) {
+      margin-right: .4rem;
+    }
+  }
+}
+
+.show-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.show-username {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+  @include respond(phone-big) {
+   font-size: 1.65rem;
+   margin-right: .5rem;
+  }
+}
+
+.show-admin {
+  margin-left: auto;
+}

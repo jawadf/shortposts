@@ -1,0 +1,159 @@
+@import '../../theme.scss';
+
+.hero {
+  height: 56.5rem;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+
+  @include respond(phone-big) {
+    height: 72rem;
+  }
+  @include respond(phone-medium) {
+    height: 80rem;
+  }
+  @include respond(phone-small){
+    height: 87rem;
+  }
+
+  &__content {
+    text-align: center;
+    padding-top: 13rem;
+
+
+    @include respond (tab-small) {
+      padding-top: 8.5rem;
+    }
+    @include respond (phone-medium) {
+      padding-top: 8.5rem;
+    }
+    
+  }  
+
+  &__heading {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+
+    @include respond(phone-big) {
+      width: 100%;
+      font-size: 5rem;
+      margin-bottom: 4rem;
+    }
+
+    @include respond (phone-medium) {
+      width: 85%;
+    }
+  }
+
+  &__subheading {
+    display: block;
+    width: 62%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      font-size: 1.85rem;
+    }
+
+    
+
+    @include respond(phone-big) {
+      font-size: 2.45rem;
+      width: 82%;
+      margin-bottom: 6rem;
+    }
+  }
+ 
+}
+
+.blog {
+  padding: 5rem 0;
+  border-bottom: .5px solid rgba(63, 63, 63, 0.329);
+
+  &:last-child {
+    border: none;
+  }
+
+  &__bar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    color: $color-primary;
+    display: inline-block;
+    margin-bottom: .7rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+    transition: color .1s;
+
+    @include respond(phone-big) {
+      font-size: 2.8rem;
+    }
+    @include respond(phone-medium) {
+      font-size: 2.3rem;
+    }
+
+    @media only screen and (max-width: 21.875em) {
+      font-size: 1.77rem;
+    }
+
+    &:hover {
+      color: $color-primary-light;
+    }
+    
+  } 
+
+  &__username {
+    font-style: italic;
+    margin-left: 2rem;
+
+    @include respond(phone-big) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(phone-medium) {
+      font-size: 1.9rem;
+      margin-left: 0.75rem;
+    }
+    
+  }
+
+  &__admin {
+    margin-left: auto;
+  }
+
+  &__paragraph {
+    margin: 2rem 0;
+    @include respond(phone-big) {
+      font-size: 2.15rem;
+    }
+  }
+}
+
+
+.list {
+  padding: 7rem 0;
+
+  &__heading {
+    border-bottom: 1px solid rgba(75, 75, 75, 0.486);
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 45%;
+    font-size: 3rem;
+    margin: 4rem auto;
+
+    @include respond(phone-medium) {
+      font-size: 3.4rem;
+      margin: 6rem auto;
+      width: 80%;
+    }
+
+  }
+}

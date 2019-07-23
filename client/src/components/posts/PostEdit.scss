@@ -1,0 +1,15 @@
+@import '../../theme.scss';
+
+.edit-form {
+  padding-top: 4.5rem;
+  display: block;
+
+  h4 {
+    font-size: 2rem;
+
+    @include respond(phone-big) {
+      font-size: 2.7rem;
+      margin-top: 6rem;
+    }
+  }
+}

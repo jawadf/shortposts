@@ -1,0 +1,23 @@
+@import './theme.scss';
+
+
+.header {
+  font-size: 2.2rem !important;
+
+  @include respond(phone-big) {
+    font-size: 2.5rem !important;
+  }
+}
+
+.my-modal {
+  padding: 1.4rem;
+  top: 32%;
+
+  & > * {
+    font-size: 1.7rem;
+  }
+
+  @include respond(tab-port) {
+    top: 20%;
+  }
+}
